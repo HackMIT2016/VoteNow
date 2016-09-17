@@ -137,6 +137,9 @@ function create(db) {
     
 	// Configure paths
 	app.use('/', require(path.join(__dirname, config.server.routesDirectory, 'index'))(db, logger));
+    app.use('/data', require('./routes/data/index')(db, logger));
+    
+    
 	/*app.use('/login', require(path.join(__dirname, config.server.routesDirectory, 'login'))(db, logger));
 	app.use('/register', require(path.join(__dirname, config.server.routesDirectory, 'register'))(db, logger));
 	app.use('/registerSuccess', require(path.join(__dirname, config.server.routesDirectory, 'registerSuccess'))(db, logger));
