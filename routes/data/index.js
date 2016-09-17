@@ -9,23 +9,27 @@ module.exports = function(db, logger){
         var data = req.body;
                 
         var document = {};
-        if (data.title) document.title = data.title;
-        if (data.description) document.description = data.description;
-        if (data.questions) document.questions = data.questions;
+        if (data.title && data.questions && data.expirationDate && data.private && data.resultsBeforeClosed && data.resultsAfterClosed && data.seeParticipants) {
+            document.title = data.title;
+            document.questions = data.questions;
+            document.expirationDate = data.expirationDate;
+            document.private = data.private;
+            document.resultsBeforeClosed = data.resultsBeforeClosed;
+            document.resultsAfterClosed = data.resultsAfterClosed;
+            document.seeParticipants = data.seeParticipants;
+        }
         else {
             res.status(400);
             return res.json({ error: "Missing parameter" });
         }
-        if (data.expirationDate) document.expirationDate = data.expirationDate;
-        if (data.private) document.private = data.private;
-        if (data.resultsBeforeClosed) document.resultsBeforeClosed = data.resultsBeforeClosed;
-        if (data.resultsAfterClosed) document.resultsAfterClosed = data.resultsAfterClosed;
-        if (data.seeParticipants) document.seeParticipants = data.seeParticipants;
+        
+        if (data.description) document.description = data.description;
         
         if (!data.questions.length) {
             res.status(400);
             return res.json({ error: "No questions" });
         }
+        
         
         document.createdDate = new Date();
         
@@ -69,6 +73,49 @@ module.exports = function(db, logger){
                         res.json(calculateResults(votes, poll.questions));
                     }
                 });
+            }
+        });
+    });
+    
+    router.get('/poll/*', function(req, res) {
+        var resultsId = req.path.slice(7);
+        
+        db.collection(config.db.collections.polls).findOne({ resultsId: resultsId }, function(err, poll) {
+            if (err) {
+                logger.error(err);
+                res.status(500);
+            }
+            else if (!poll) {
+                res.status(404);
+            }
+            else {
+                res.json(poll);
+            }
+        });
+    });
+    
+    router.post('/poll/vote/*', function(req, res) {
+        var voteId = req.path.slice(12);
+        
+        var document = {};
+        if (data.pollId && data.voteId && data.name && data.questionMap) {
+            document.pollId = data.pollId;
+            document.voteId = data.voteId;
+            document.name = data.name;
+            document.questionMap = data.questionMap;
+        }
+        else {
+            res.status(400);
+            return res.json({ error: "Missing parameter" });
+        }
+        
+        db.collection(config.db.collections.polls).insert(document, function(err) {
+            if (err) {
+                logger.error(err);
+                res.status(500);
+            }
+            else {
+                res.json({ success: true });
             }
         });
     });
