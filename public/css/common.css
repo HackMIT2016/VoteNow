@@ -1,0 +1,107 @@
+/*These are custom CSS class for Diameter Health, Inc.
+Copyright, Diameter Health, Inc. 2014
+*/
+
+body {
+    background: #eeeeee;
+}
+
+#page {
+    padding: 0px;
+}
+
+.dh-content {
+    background: #ffffff;
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.dh-header {
+    background: #eeeeee;
+    padding: 16px;
+}
+
+.navbar-fixed-top {
+    padding-left: 0px;
+    padding-right: 0px;
+    *margin-bottom: 0px;
+}
+
+.dh-navbar {
+    *background: #612423;
+}
+
+/*
+.navbar-dh {
+    background: #612423;
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.navbar-header a {
+    font-size: 16px;
+}
+
+.navbar-dh a {
+    color: #eeeeee;
+}
+
+.navbar-dh a:hover {
+    color: #ffffff;
+}
+
+.navbar-dh li a:hover, .navbar-dh li a:focus {
+    background: #7b3130;
+}
+
+.navbar-dh li.active {
+    background: #7b3130;
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+}
+*/
+
+hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.copyright {
+    padding: 16px;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+
+.secondaryColor {
+    color: #31708f;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}

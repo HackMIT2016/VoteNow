@@ -1,0 +1,38 @@
+/*These are custom CSS class for Diameter Health, Inc.
+Copyright, Diameter Health, Inc. 2014
+*/
+
+.dh-content {
+    padding-bottom: 15px;
+}
+
+.alert {
+    margin: 0px;
+}
+
+.k-header {
+    cursor: pointer !important;
+}
+
+.k-header .k-link {
+    color: #333333 !important;
+    text-decoration: none !important;
+}
+
+/*
+[role="row"] {
+    cursor: pointer !important;
+}
+*/
+
+.dh-button {
+    background: #fafafa;
+}
+
+.number-spinner {
+    width: 200px;
+}
+
+.margin-top-minor {
+    margin-top: 8px;
+}

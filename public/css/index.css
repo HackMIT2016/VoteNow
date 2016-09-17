@@ -1,0 +1,319 @@
+/*These are custom CSS class for Diameter Health, Inc.
+Copyright, Diameter Health, Inc. 2014
+*/
+
+.dh-content {
+    padding-bottom: 22px;
+}
+
+div.result {
+    margin-bottom: 10px;
+    padding: 8px;
+    *padding-left: 8px;
+    *padding-bottom: 5px;
+    height: 110px;
+}
+
+a.result {
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.state-image {
+    width: 100px;
+}
+
+.state-image-big {
+    width: 200px;
+}
+
+div.result .state-image {
+    float: right;
+}
+
+.dh-button {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.dh-page-button {
+    border: none;
+    min-width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    color: #555555 !important;
+}
+
+.dh-button-group {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.dh-border {
+    border: 1px solid black;
+}
+
+.dh-panel .panel-heading {
+    padding: 0px;
+}
+
+.dh-panel .panel-body {
+    padding: 0px;
+}
+
+.dh-panel .panel-heading a.dh-panel-heading h4 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.dh-panel .panel-heading a.dh-panel-heading {
+    color: #000000;
+    text-decoration: none;
+}
+
+.dh-list-group {
+    margin: 0px;
+}
+
+.dh-list-group li {
+    border: 0px;
+}
+
+.dh-list-group-striped li:nth-of-type(odd) {
+    background: #f9f9f9;
+}
+.dh-list-group-striped li:nth-of-type(even) {
+    background: #FFFFFF;
+}
+
+.dh-table {
+    margin-bottom: 0px;
+    border: none;
+}
+
+.dh-table table {
+    margin: 0px;
+}
+
+.dh-table td {
+    border: none !important;
+}
+
+.dh-table ul {
+    margin: 0px;
+}
+
+.dh-table-striped tr:nth-of-type(odd) {
+    background: #f0f0f0;
+}
+.dh-table-striped tr:nth-of-type(even) {
+    background: #FFFFFF;
+}
+
+.dh-table-fixed {
+    table-layout: fixed;
+}
+
+.dh-success {
+    color: #3c763d;
+    background-color: #dff0d8 !important;
+    text-align: center;
+    padding: 8px;
+}
+
+.dh-danger {
+    color: #a94442;
+    background-color: #f2dede !important;
+    text-align: center;
+    padding: 8px;
+}
+
+.dh-neutral {
+    color: #333333;
+    background-color: #f0f0f0 !important;
+    text-align: center;
+    padding: 8px;
+}
+
+.dh-checkbox {
+    /* Scaled Checkboxes */
+    -ms-transform: scale(1.3); /* IE */
+    -moz-transform: scale(1.3); /* FF */
+    -webkit-transform: scale(1.3); /* Safari and Chrome */
+    -o-transform: scale(1.3); /* Opera */
+    position: relative;
+    top: 17px;
+}
+
+.dh-checkbox {
+    /* Scaled Checkboxes */
+    -ms-transform: scale(1.3); /* IE */
+    -moz-transform: scale(1.3); /* FF */
+    -webkit-transform: scale(1.3); /* Safari and Chrome */
+    -o-transform: scale(1.3); /* Opera */
+    position: relative;
+    top: 17px;
+}
+
+div.disabled h3, div.disabled input {
+    color: #808080;
+}
+
+.alert-gray {
+    color: #505050;
+    background-color: #e0e0e0;
+    border-color: #c0c0c0;
+}
+
+.dh-checkbox-area {
+    margin-bottom: 0px;
+}
+
+.dh-checkbox-area, .dh-checkbox-area label, .dh-checkbox-area input {
+    cursor: pointer
+}
+
+.dh-alert-default {
+    background: #eeeeee;
+    border-color: #cccccc;
+}
+
+.dh-label-text {
+    font-size: 18px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.dh-range-button {
+    background: #fafafa;
+}
+
+.number-spinner {
+    max-width: 200px;
+}
+
+span.input-group-btn {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    vertical-align: top;
+}
+
+.slider {
+    width: 100% !important;
+}
+
+.slider .tooltip {
+	top: -30px !important;
+}
+
+.slider .slider-selection {
+	background: #dddddd;
+}
+
+.centered {
+    margin: auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.middle-text {
+    vertical-align: middle;
+}
+
+.padding-top-minor {
+    padding-top: 8px !important;
+}
+
+.padding-left-minor {
+    padding-left: 15px !important;
+}
+
+.padding-left-major {
+    padding-left: 30px !important;
+}
+
+.padding-minor {
+    padding: 15px !important;
+}
+
+.padding-vertical-minor {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.margin-top-major {
+    margin-top: 16px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-padding-vertical {
+    padding-top: 0px !important;
+    *padding-bottom: 0px !important;
+}
+
+.no-margin-top {
+    margin-top: 0px !important;
+}
+
+.margin-top-major {
+    margin-top: 15px !important;
+}
+
+.margin-bottom-major {
+    margin-bottom: 15px !important;
+}
+
+.col-border-right {
+    border-right: 2px solid #eeeeee !important;
+    margin-right: -1px;
+}
+
+.col-border-left {
+    border-left: 2px solid #eeeeee !important;
+    margin-left: -1px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+.disabled {
+    pointer-events: none !important;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+}
+
+.slider.disabled .slider-handle {
+    background: #aaaaaa;
+}
+
+.fakelink {
+    color: #333333;
+    *color: #337ab7;
+}
+
+.fakelink:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.fakelink:focus {
+    color: #333333;
+    text-decoration: none;
+}
