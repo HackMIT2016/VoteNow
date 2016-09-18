@@ -4,13 +4,11 @@ html,body{
 	height:100%;
 	width:100%;
 	font-family: 'Open Sans',sans-serif;
-
 }
 .wrapper{
 	height:100%;
 	width:100%;
 	background-image: url("wallpaper.jpg") !important;
-
 }
 
 .centerblock{
@@ -24,7 +22,6 @@ html,body{
 .question{
 	margin-left:10%;
 	margin-right:10%;
-
 }
 .darkhighlight{
 	background-color: #66ffff;
@@ -37,4 +34,16 @@ html,body{
 .lighthighlight{
 	background-color: #ccffff;
 	border-radius: 5px;
+}
+h1{
+    text-align: center;
+    font-weight:200;
+}
+h2{
+    text-align: center;
+    font-weight:200;
+}
+h3{
+    text-align: center;
+    font-weight:200;
 }
