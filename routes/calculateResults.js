@@ -31,14 +31,6 @@ module.exports = function(votes, questions) {
 	    }
 	    results.push(qResult)
 	}
-
-
-
-
-
-
-
-    }
     
     return results;
     
