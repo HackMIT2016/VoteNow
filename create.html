@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!--jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+   
+    
+    <!-- Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+    <!-- CSS and JS inclusion -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+    
+    <!-- Favicon insert-->
+    <link rel="shortcut icon" href="http://www.example.com/myicon.ico"/>
+    
+</head>
+	
+<body>
+	<div class='wrapper'>
+		<div class='centerblock'>
+            <h1>
+                vote.io
+            </h1>
+			
+			<h2> Create New Poll </h2>
+			<form action="/data/poll" method="POST" autocompletion="off" id="create_form">
+			<h4> Ballot Name: </h4>
+			<input type="text" name="title">
+			<h4> Description: </h4>
+			<textarea rows="4" cols="50" name="description" form="create_form"></textarea>
+			<h4> Poll End Date: </h4>
+			<input type="date" name="expirationDate">
+
+
+			<div id="questionContainer">
+			</div>
+			<button id="addButton" onclick="addQuestion()">+</button>
+
+			<h3> Publish Options </h3>
+			<h4> Public or Private? </h4>
+			<input type="radio" name="private" value="true"> Private <input type="radio" name="private" value="false"> Public
+
+			<h4> Live Results? </h4>
+			<input type="radio" name="resultsBeforeClosed" value="true"> True <input type="radio" name="resultsBeforeClosed" value="false"> False
+
+			<h4> Results viewable to participants? </h4>
+			<input type="radio" name="resultsAfterClosed" value="true"> True <input type="radio" name="resultsAfterClosed" value="false"> False
+
+			<h4> Include Participant List with Results? </h4>
+			<input type="radio" name="seeParticipants" value="true"> True <input type="radio" name="seeParticipants" value="false"> False
+
+			</textarea>
+			<br>
+			<input type="submit" value="Launch Poll">
+		</div>
+	</div>
+</body>
