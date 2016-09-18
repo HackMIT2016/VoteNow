@@ -35,6 +35,10 @@ html,body{
 	background-color: #ccffff;
 	border-radius: 5px;
 }
+.title{
+    margin-top: 30%;
+    margin-bottom:10%;
+}
 h1{
     text-align: center;
     font-weight:200;
